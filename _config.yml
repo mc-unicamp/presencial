@@ -1,0 +1,33 @@
+permalink: /:categories/
+title: Museu Presencial
+author:
+  name: Museu Exploratório de Ciências da Unicamp
+description: >
+  Aqui você encontrará informações para o Museu Presencial.
+
+show_excerpts: false
+
+minima:
+  date_format: "%b %-d, %Y"
+
+# Build settings
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "README.md"
+    values:
+      permalink: "index.html"
+
+header_pages:
+ - museu.md
